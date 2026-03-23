@@ -12,7 +12,6 @@ A feature-rich music player inspired by Spotify, built using HTML, CSS, and vani
 - Shuffle and Repeat modes
 - Real-time progress bar with timer sync
 - Volume control with mute toggle
-- Keyboard shortcuts for seamless control
 
   ## 🛠️ Tech Stack
 - HTML
