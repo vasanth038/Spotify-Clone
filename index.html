@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Nav-bar-->
+    <nav>
+        <div class="left-half">
+            <div class="logo"><i class="fa-brands fa-spotify"></i></div>
+            <div class="home-icon"><i class="fa-solid fa-house"></i></div>
+            <div class="search-bar">
+                <div class="search-icon"> <i class="fa-solid fa-magnifying-glass"></i></div>
+                <input type="text" class="input-box" placeholder="What do you want to play ?">
+                <div class="browse"><i class="fa-solid fa-folder-open"></i></div>
+            </div>
+        </div>
+        <div class="right-half">
+            <div class="right-half-p1">
+                <p class="nav-text">Premium</p>
+                <p class="nav-text">Support</p>
+                <p class="nav-text">Download</p>
+            </div>
+            <div class="right-half-p2">
+                <div class="nav-text"><i class="fa-solid fa-circle-down"></i></div>
+                <p class="nav-text">Install App</p>
+                <div class="nav-text">Sign up</div>
+                <button class="login-btn">Log in</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main-section-->
+    <div class="main">
+        <!-- main-left-part--->
+        <div class="main-left-part">
+            <div class="library">
+                <p>Your Library</p>
+                <button><span><i class="fa-solid fa-plus"></i> Create</span></button>
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <h4>Create your first playlist</h4>
+                    <p>It's easy, we'll help you</p>
+                    <button>Create playlist</button>
+                </div>
+                <div class="box">
+                    <h4>Let's find some podcasts to follow</h4>
+                    <p>We'll keep you updated on new episodes</p>
+                    <button>Browse podcasts</button>
+                </div>
+            </div>
+            <div class="extra">
+
+                <div class="first-extra">
+                    <p>Legal</p>
+                    <p>Safety&privacy Center</p>
+                    <p>privacy Policy</p>
+                    <p>Cookies</p>
+                    <p>About Ads</p>
+                    <p>Accessivility</p>
+                </div>
+                <div class="second-extra">
+                    <p>Cookies</p>
+                </div>
+                <div class="third-extra"> <i class="fa-solid fa-globe"></i>
+                    <p>English</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- main-right-part--->
+        <div class="main-right-part">
+
+            <!-- Section 1 - Trending Songs (6 cards) -->
+            <div class="music-section">
+                <h2>Trending Songs</h2>
+                <div class="songs">
+                    <div class="music-card">
+                        <img src="images/1.jpeg" alt="Song 1">
+                        <div class="music-play-btn"><i id="1" class="musicplay fa-solid fa-circle-play"></i></div>
+                        <div class="image-title">Song 1</div>
+                        <div class="image-discription">Description 1</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/2.jpeg" alt="Song 2">
+                        <div class="music-play-btn"><i id="2" class="musicplay fa-solid fa-circle-play"></i></div>
+                        <div class="image-title">Song 2</div>
+                        <div class="image-discription">Description 2</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/3.jpeg" alt="Song 3">
+                        <div class="music-play-btn"><i id="3" class="musicplay fa-solid fa-circle-play"></i></div>
+                        <div class="image-title">Song 3</div>
+                        <div class="image-discription">Description 3</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/4.jpeg" alt="Song 4">
+                        <div class="music-play-btn"><i id="4" class="musicplay fa-solid fa-circle-play"></i></div>
+                        <div class="image-title">Song 4</div>
+                        <div class="image-discription">Description 4</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/5.jpeg" alt="Song 5">
+                        <div class="music-play-btn"><i id="5" class="musicplay fa-solid fa-circle-play"></i></div>
+                        <div class="image-title">Song 5</div>
+                        <div class="image-discription">Description 5</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/1.jpeg" alt="Song 6">
+                        <div class="music-play-btn"><i id="6" class="musicplay fa-solid fa-circle-play"></i></div>
+                        <div class="image-title">Song 6</div>
+                        <div class="image-discription">Description 6</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2 - Popular Songs (6 cards) -->
+            <div class="music-section">
+                <h2>Popular Songs</h2>
+                <div class="songs">
+                    <div class="music-card">
+                        <img src="images/2.jpeg" alt="Song 7">
+                        <div class="music-play-btn"><i id="7" class="musicplay fa-solid fa-circle-play"></i></div>
+                        <div class="image-title">Song 7</div>
+                        <div class="image-discription">Description 7</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/3.jpeg" alt="Song 8">
+                        <div class="music-play-btn"><i id="8" class="musicplay fa-solid fa-circle-play"></i></div>
+                        <div class="image-title">Song 8</div>
+                        <div class="image-discription">Description 8</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/9.jpeg" alt="Song 9">
+                        <div class="music-play-btn"><i id="9" class="musicplay fa-solid fa-circle-play"></i></div>
+                        <div class="image-title">Song 9</div>
+                        <div class="image-discription">Description 9</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/5.jpeg" alt="Song 10">
+                        <div class="music-play-btn"><i id="10" class="musicplay fa-solid fa-circle-play"></i></div>
+                        <div class="image-title">Song 10</div>
+                        <div class="image-discription">Description 10</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/1.jpeg" alt="Song 11">
+                        <div class="music-play-btn"><i id="11" class="musicplay fa-solid fa-circle-play"></i></div>
+                        <div class="image-title">Song 11</div>
+                        <div class="image-discription">Description 11</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/2.jpeg" alt="Song 12">
+                        <div class="music-play-btn"><i id="12" class="musicplay fa-solid fa-circle-play"></i></div>
+                        <div class="image-title">Song 12</div>
+                        <div class="image-discription">Description 12</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3 - Popular Artists (6 cards) -->
+            <div class="music-section">
+                <h2>Popular Music</h2>
+                <div class="songs">
+                    <div class="music-card">
+                        <img src="images/3.jpeg" alt="Song 13">
+                        <div class="music-play-btn"><i id="13" class="musicplay fa-solid fa-circle-play"></i></div>
+                        <div class="image-title">Song 13</div>
+                        <div class="image-discription">Description 13</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/4.jpeg" alt="Song 14">
+                        <div class="music-play-btn"><i id="14" class="musicplay fa-solid fa-circle-play"></i></div>
+                        <div class="image-title">Song 14</div>
+                        <div class="image-discription">Description 14</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/5.jpeg" alt="Song 15">
+                        <div class="music-play-btn"><i id="15" class="musicplay fa-solid fa-circle-play"></i></div>
+                        <div class="image-title">Song 15</div>
+                        <div class="image-discription">Description 15</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/1.jpeg" alt="Song 16">
+                        <div class="music-play-btn"><i id="16" class="musicplay fa-solid fa-circle-play"></i></div>
+                        <div class="image-title">Song 16</div>
+                        <div class="image-discription">Description 16</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/2.jpeg" alt="Song 17">
+                        <div class="music-play-btn"><i id="17" class="musicplay fa-solid fa-circle-play"></i></div>
+                        <div class="image-title">Song 17</div>
+                        <div class="image-discription">Description 17</div>
+                    </div>
+                    <div class="music-card">
+                        <img src="images/3.jpeg" alt="Song 18">
+                        <div class="music-play-btn"><i id="18" class="musicplay fa-solid fa-circle-play"></i></div>
+                        <div class="image-title">Song 18</div>
+                        <div class="image-discription">Description 18</div>
+                    </div>
+                </div>
+
+        <div class="all-links">
+            <div >
+                <h2> Company</h2>
+                <p>About</p>
+                <p>Jobs</p>
+                <p>For the Record</p>
+            </div>
+            <div>
+                <h2>Communities</h2>
+                <p>For Artists</p>
+                <p>Developer</p>
+                <p>Advertising</p>
+                <p>Investors</p>
+                <p>Vendors</p>
+            </div>
+            <div>
+                <h2>Useful Links</h2>
+                <p>Support</p>
+                <p>Free Mobile App</p>
+                <p>Popular by Country</p>
+                <p>Import your music</p>
+            </div>
+            <div>
+                <h2>Spotify Plans</h2>
+                <p>Premium Lite</p>
+                <p> Premium Standard</p>
+                <p>Premium Platinum</p>
+                <p>Premium Student</p>
+                <p>Spotify Free</p>
+            </div>
+            <div class="all-links-imgs">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+            </div>
+        </div>
+        <div class="copy-right">
+      <p>© 2026 Spotify AB </p> 
+        </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Player-section-->
+    <div class="player-bar">
+        <div class="now-bar">
+            <img src="images/1.jpeg" alt="image-1">
+            <div>
+                <div class="img-titel-info">Titel-1</div>
+                <div class="img-dis-info">Description 1 of the song</div>
+            </div>
+        </div>
+        <div class="music-control">
+            <div class="player">
+                <div><i id="shuffle" class="player-btn fa-solid fa-shuffle"></i></div>
+                <div><i id="backward" class="player-btn fa-solid fa-backward"></i></div>
+                <div><i id="play" class="player-btn fa-solid fa-circle-play"></i></div>
+                <div><i id="forward" class="player-btn fa-solid fa-forward"></i></div>
+                <div><i id="repeat" class="player-btn fa-solid fa-repeat"></i></div>
+            </div>
+            <div>
+                <input type="range" id="progress-bar" min="0" max="100" value="0">
+            </div>
+        </div>
+        <div></div>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
