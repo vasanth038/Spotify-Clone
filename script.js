@@ -49,7 +49,7 @@ let playmusic = Array.from(document.getElementsByClassName("musicplay"));
 allMusics.forEach((element, i) => {
     element.getElementsByTagName('img')[0].src = songs[i].songImage;
     element.getElementsByClassName('image-title')[0].innerText = songs[i].songName;
-    element.getElementsByClassName('image-discription')[0].innerText = songs[i].songDes;
+    element.getElementsByClassName('image-description')[0].innerText = songs[i].songDes;
 });
 
 audio.src = songs[0].songPath;
@@ -248,5 +248,50 @@ repeat.addEventListener('click', () => {
     } else {
         songOnRepeat = false;
         repeat.classList.remove('active');
+    }
+});
+// timer // 
+function formatTime(seconds) {
+    if (isNaN(seconds)) return '0:00';
+    let mins = Math.floor(seconds / 60);
+    let secs = Math.floor(seconds % 60);
+    return `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+}
+
+let currentTimeEl = document.getElementById("current-time");
+let totalTimeEl = document.getElementById("total-time");
+
+audio.addEventListener('timeupdate', () => {
+    if (!audio.duration) return;
+    progressBar.value = (audio.currentTime / audio.duration) * 100;
+    currentTimeEl.textContent = formatTime(audio.currentTime);
+});
+
+audio.addEventListener('loadedmetadata', () => {
+    totalTimeEl.textContent = formatTime(audio.duration);
+});
+let volumeBar = document.getElementById("volume-bar");
+let volumeIcon = document.getElementById("volume-icon");
+
+volumeBar.addEventListener('input', function () {
+    audio.volume = this.value / 100;
+    if (this.value == 0) {
+        volumeIcon.className = 'fa-solid fa-volume-xmark';
+    } else if (this.value < 50) {
+        volumeIcon.className = 'fa-solid fa-volume-low';
+    } else {
+        volumeIcon.className = 'fa-solid fa-volume-high';
+    }
+});
+
+volumeIcon.addEventListener('click', () => {
+    if (audio.volume > 0) {
+        audio.volume = 0;
+        volumeBar.value = 0;
+        volumeIcon.className = 'fa-solid fa-volume-xmark';
+    } else {
+        audio.volume = 1;
+        volumeBar.value = 100;
+        volumeIcon.className = 'fa-solid fa-volume-high';
     }
 });

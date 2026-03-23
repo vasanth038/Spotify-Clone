@@ -88,7 +88,7 @@ nav {
 .input-box {
     width: 70%;
     height: 70%;
-    background-color: #1f1f1f00;
+   background-color: transparent;
     border: none;
     border-right: 1px solid rgb(180, 170, 170);
     color: white;
@@ -330,6 +330,8 @@ flex-wrap: wrap;
     width: 10rem;
     border-radius: 5px;
     position: relative;
+    margin: 10px;
+    
 }
 
 .music-card:hover {
@@ -362,7 +364,7 @@ flex-wrap: wrap;
     color: rgb(207, 196, 196);
 }
 
-.image-discription {
+.image-description {
     font-size: 0.8rem;
     color: rgb(229, 225, 225);
 }
@@ -474,6 +476,20 @@ flex-wrap: wrap;
     height: 4px;
     background-color: #333;
 }
+.progress-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.progress-container span {
+    font-size: 0.75rem;
+    color: rgb(179, 179, 179);
+    min-width: 2.5rem;
+    text-align: center;
+}
 
 .now-bar {
 
@@ -502,4 +518,31 @@ flex-wrap: wrap;
 }
 .active:hover{
     color: green;
+}
+.volume-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 150px;
+    justify-content: flex-end;
+    padding-right: 1rem;
+}
+
+#volume-icon {
+    color: rgb(207, 200, 200);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#volume-icon:hover {
+    color: white;
+}
+
+#volume-bar {
+    width: 100px;
+    height: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    accent-color: #1DB954;
 }
