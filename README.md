@@ -18,11 +18,7 @@ A feature-rich music player inspired by Spotify, built using HTML, CSS, and vani
 - CSS
 - JavaScript (Vanilla)
 - Font Awesome
+ 
+👨‍💻 Author
 
- Project Structure:
-Spotify-Clone/
-├── index.html
-├── style.css
-├── script.js
-├── images/
-└── Audio/
+Vasanth
